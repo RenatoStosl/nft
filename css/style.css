@@ -1,0 +1,149 @@
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+}
+
+body,
+h1,
+ul,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: hsl(217, 54%, 11%);
+}
+
+.container-nft {
+  max-width: 300px;
+  padding: 18px;
+  background: hsl(216, 50%, 16%);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 40px;
+}
+
+.container-nft__img {
+  position: relative;
+}
+
+.container-nft__img:hover {
+  cursor: pointer;
+}
+
+.container-nft__img a {
+  display: none;
+}
+
+.container-nft__img:hover > a {
+  display: block;
+  position: absolute;
+  width: 15%;
+  height: 15%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+}
+
+.img-nft {
+  border-radius: 8px;
+  max-width: 100%;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(178, 100%, 50%);
+  opacity: 0;
+  border-radius: 8px;
+}
+
+.overlay:hover {
+  opacity: 0.5;
+}
+
+.nft-titulo {
+  font-size: 20px;
+  color: hsl(0, 0%, 100%);
+  margin: 15px 0;
+}
+
+.nft-titulo:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+.nft-paragrafo {
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+  margin: 15px 0;
+}
+
+.nft-dados {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.nft-dados__card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nft-dados :nth-child(1) {
+  color: hsl(178, 100%, 50%);
+}
+
+.nft-dados :nth-child(2) {
+  color: hsl(215, 51%, 70%);
+}
+
+hr {
+  color: hsl(215, 32%, 27%);
+}
+
+.nft-autor {
+  font-size: 14px;
+  color: hsl(215, 51%, 70%);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.nft-autor img {
+  margin-right: 10px;
+  width: 10%;
+  border-radius: 20px;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+
+.nft-autor span {
+  color: hsl(0, 0%, 100%);
+}
+
+.nft-autor span:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
